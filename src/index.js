@@ -1,2 +1,3 @@
-var exam = "Ts";
-console.log(exam);
+"use strict";
+let exam = "Ts";
+console.log("Nasılsınız" + exam);

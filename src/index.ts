@@ -1,2 +1,2 @@
 let exam="Ts"
-console.log(exam)
+console.log("Nasılsınız" + exam)
