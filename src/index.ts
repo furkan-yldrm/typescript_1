@@ -1,0 +1,1 @@
+let exam="Merhaba Ts"

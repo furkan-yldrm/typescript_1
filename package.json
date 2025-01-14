@@ -2,7 +2,7 @@
   "name": "typescript_1",
   "version": "1.0.0",
   "description": "typescript dev 101",
-  "main": "template.js",
+  "main": "src/index.js",
   "devDependencies": {
     "nodemon": "^3.1.9",
     "typescript": "^5.7.3"
