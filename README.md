@@ -24,3 +24,15 @@ git -v
 
 
 ## Typescript
+```sh
+npm init -y 
+
+
+npm install -g typescript
+npm install typescript --save-dev
+
+npm install -g nodemon
+npm install nodemon --save-dev
+```
+
+---
