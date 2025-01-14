@@ -25,7 +25,7 @@ git -v
 
 ## Typescript
 ```sh
-npm init -y 
+npm init  
 
 
 npm install -g typescript
