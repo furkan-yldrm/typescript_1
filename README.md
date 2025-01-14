@@ -27,9 +27,14 @@ git -v
 ```sh
 npm init  
 
+tsc --init
+tsc --init  --locale tr
 
 npm install -g typescript
 npm install typescript --save-dev
+tsc
+tsc -w (watch)
+
 
 npm install -g nodemon
 npm install nodemon --save-dev

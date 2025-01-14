@@ -8,6 +8,9 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
+    "tsc": "tsc ./src/index.ts",
+    "tsc_w": "tsc -w ./src/index.ts",
+    "nodemon": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,1 +1,2 @@
-let exam="Merhaba Ts"
+let exam="Ts"
+console.log(exam)
