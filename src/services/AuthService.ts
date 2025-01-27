@@ -6,7 +6,7 @@ export class AuthService {
 
     private users:User[] = [];
 
-public register(data:IRegister):string{
+    public register(data:IRegister):string{
     if(data.password !== data.confirmPassword){
         return "Password and Confirm password do not match";
     }
@@ -14,9 +14,9 @@ public register(data:IRegister):string{
     const user = new User(data.username,data.password);
     this.users.push(user);
     return `User registered successfully. ID: ${user.getId()}`;
-}
+    }
 
-public login(data:Ilogin):string{
+    public login(data:Ilogin):string{
     const user = this.users.find((u) => u.getUsername() === data.username);
 
     if(!user){
@@ -28,5 +28,9 @@ public login(data:Ilogin):string{
     }
 
     return `Welcome ${user.getRole()} ${user.getUsername()}`; 
-  } 
+    } 
+
+    public getUsers(): User[]{
+        return this.users;
+    }
 } 
