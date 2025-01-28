@@ -41,6 +41,10 @@ public getLastLogin(): Date | null {
     return this.role;
   }
 
+  public setRole(newRole: UserRole): void {
+    this.role = newRole;
+  }
+
   specialPage(): void {
     if (UserRole.Admin === this.role) {
         console.log("Admin sayfasina hoşgeldiniz");
