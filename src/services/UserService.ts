@@ -9,4 +9,12 @@ export abstract class UserService{
     public listUsers(): User[]{ 
         return this.users;
     }
+
+    public countUsers(): number{
+        return this.users.length;
+    }
+
+    public removeUsers(): void{
+        this.users = [];
+    }
 }
