@@ -33,4 +33,13 @@ export class AuthService {
     public getUsers(): User[]{
         return this.users;
     }
+
+    public deleteUser(username:string):boolean {
+        const user = this.users.findIndex((u) => u.getUsername() === username);
+        if (user !== -1) {
+          this.users.splice(user, 1);
+          return true;
+        }
+        return false;
+      }
 } 

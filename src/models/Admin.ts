@@ -9,4 +9,8 @@ export class Admin extends User {
     public override getRole(): string {
         return "Admin";
     }
+
+    public viewAllUsers(): string {
+        return "Admins are listed";
+    }
 }

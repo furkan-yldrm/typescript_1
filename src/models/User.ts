@@ -1,3 +1,4 @@
+import { UserRole } from "../utils/UserRole";
 
 export class User {
     private static idCounter: number = 1;
@@ -5,13 +6,22 @@ export class User {
   private id: number;
   protected username: string;
   private password: string;
-  private readonly role: string = "User"; 
+  private readonly role: string = UserRole;
+  private lastLogin: Date | null = null;
   
-  constructor(username: string, password: string) {
+  constructor(username: string, password: string, role:UserRole=UserRole.User) {
     this.id = User.idCounter++;
     this.username = username;
     this.password = password;
   } 
+
+  public updateLastLogin(): void {
+    this.lastLogin = new Date();
+}
+
+public getLastLogin(): Date | null {
+    return this.lastLogin;
+}
   
   public getId(): number {
     return this.id;
